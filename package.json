@@ -1,0 +1,29 @@
+{
+  "name": "pixiv-downloader",
+  "version": "1.0.0",
+  "description": "Pixiv 画师作品下载器",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "nexe src/index.js -o dist/pixiv-downloader.exe --target windows-x64-14.15.3 --resource \"logo/logo.ico\" --ico \"logo/logo.ico\" && node scripts/set-icon.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "https-proxy-agent": "^5.0.1",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "nexe": "^4.0.0-rc.2",
+    "windows-shortcuts": "^0.1.6"
+  },
+  "build": {
+    "appId": "com.pixiv.downloader",
+    "win": {
+      "target": "portable",
+      "icon": "assets/icon.ico"
+    }
+  }
+}
