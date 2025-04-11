@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "build": "nexe src/index.js -o dist/pixiv-downloader.exe --target windows-x64-14.15.3 --resource \"logo/logo.ico\" --ico \"logo/logo.ico\" && node scripts/set-icon.js"
+    "build": "nexe src/index.js -o dist/pixiv-downloader.exe --target windows-x64-14.15.3 --resource \"logo/logo.ico\" --ico \"logo/logo.ico\" && node scripts/set-icon.js && node scripts/build-helper.js"
   },
   "keywords": [],
   "author": "",
